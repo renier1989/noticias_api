@@ -6,15 +6,17 @@ import {
   CardMedia,
   Grid,
   Link,
+  Pagination,
+  Stack,
   Typography,
 } from "@mui/material";
 
 export const Noticia = ({ noticia }) => {
   const { urlToImage, url, title, description, source } = noticia;
-  console.log(title);
 
   if (title !== "[Removed]") {
     return (
+        <>
       <Grid item md={6} lg={4}>
         <Card>
           {urlToImage && (
@@ -48,6 +50,9 @@ export const Noticia = ({ noticia }) => {
           </CardActions>
         </Card>
       </Grid>
+
+
+        </>
     );
   }
 };
