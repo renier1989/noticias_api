@@ -37,13 +37,16 @@ export const Noticia = ({ noticia }) => {
             </Typography>
             <Typography variant="body2">{description}</Typography>
           </CardContent>
-          <CardActions textAlign={"center"}>
+          <CardActions sx={{
+                display:'block',
+                textAlign:'center'
+              }}>
             <Button
               href={url}
               target="_blank"
               variant="contained"
               width={"100%"}
-              textAlign={"center"}
+              
             >
               Leer Noticia
             </Button>
